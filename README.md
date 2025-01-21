@@ -3,6 +3,30 @@
 
 ## Installation
 
+
+### Environment Setup
+
+1. Create Python 3.10 environment (创建Python 3.10环境):
+```sh
+conda create -n py10_funmap python=3.10 -y
+```
+
+2. Modify tables package version in setup.py (修改setup.py中tables包版本):
+```sh
+tables==3.10.1
+```
+
+3. Build package (打包):
+```sh
+python setup.py sdist bdist_wheel
+```
+
+4. Install package (安装):
+```sh
+pip install dist/funmap-0.2.0-py2.py3-none-any.whl
+```
+
+
 ### Dependencies
 
 `funmap` requires the following:
